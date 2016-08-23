@@ -13,7 +13,6 @@
 		BB4F480C1D6544C20096C300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4F480A1D6544C20096C300 /* Main.storyboard */; };
 		BB4F480E1D6544C20096C300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4F480D1D6544C20096C300 /* Assets.xcassets */; };
 		BB4F48111D6544C20096C300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4F480F1D6544C20096C300 /* LaunchScreen.storyboard */; };
-		BB4F481B1D6545570096C300 /* UIView+ttToast.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F481A1D6545570096C300 /* UIView+ttToast.m */; };
 		BB4F481E1D6546030096C300 /* ttToast.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4F481D1D6546030096C300 /* ttToast.m */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +27,6 @@
 		BB4F480D1D6544C20096C300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB4F48101D6544C20096C300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB4F48121D6544C20096C300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB4F48191D6545570096C300 /* UIView+ttToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ttToast.h"; sourceTree = "<group>"; };
-		BB4F481A1D6545570096C300 /* UIView+ttToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ttToast.m"; sourceTree = "<group>"; };
 		BB4F481C1D6546030096C300 /* ttToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttToast.h; sourceTree = "<group>"; };
 		BB4F481D1D6546030096C300 /* ttToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,8 +86,6 @@
 		BB4F48181D65454A0096C300 /* ttToast */ = {
 			isa = PBXGroup;
 			children = (
-				BB4F48191D6545570096C300 /* UIView+ttToast.h */,
-				BB4F481A1D6545570096C300 /* UIView+ttToast.m */,
 				BB4F481C1D6546030096C300 /* ttToast.h */,
 				BB4F481D1D6546030096C300 /* ttToast.m */,
 			);
@@ -172,7 +167,6 @@
 				BB4F481E1D6546030096C300 /* ttToast.m in Sources */,
 				BB4F48091D6544C20096C300 /* ViewController.m in Sources */,
 				BB4F48061D6544C20096C300 /* AppDelegate.m in Sources */,
-				BB4F481B1D6545570096C300 /* UIView+ttToast.m in Sources */,
 				BB4F48031D6544C20096C300 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +316,7 @@
 				BB4F48171D6544C20096C300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

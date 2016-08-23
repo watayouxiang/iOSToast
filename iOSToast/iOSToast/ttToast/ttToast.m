@@ -7,7 +7,6 @@
 //
 
 #import "ttToast.h"
-#import "UIView+ttToast.h"
 
 @implementation ttToast
 -(instancetype)initWithMessage:(NSString *)msg{
@@ -34,8 +33,16 @@
 }
 
 -(void)showAboveViewController:(UIViewController *)controller{
-    LayoutMargin marginZreo = {0,0,0,0};
-    [controller.view addSubView:self withAILayout:AILayoutCenter layoutMargin:marginZreo];
+    [controller.view addSubview:self];
+    
+    self.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    [controller.view addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.frame.size.height]];
+    [controller.view addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.frame.size.width]];
+    
+    [controller.view addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:controller.view attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0]];
+    [controller.view addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:controller.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+    
     [NSTimer scheduledTimerWithTimeInterval:1.8 target:self selector:@selector(dismiss) userInfo:nil repeats:NO];
 }
 
