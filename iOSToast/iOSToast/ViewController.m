@@ -26,7 +26,7 @@
 }
 
 - (IBAction)showToast:(UIButton *)sender {
-    [[[ttToast alloc] initWithMessage:@"loading..."] showAboveViewController:self];
+    [ttToast showToastMessage:@"loading..."];
 }
 
 @end

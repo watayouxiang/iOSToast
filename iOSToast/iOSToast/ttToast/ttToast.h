@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ttToast : UILabel
-- (instancetype)initWithMessage:(NSString*)msg;
-- (void)showAboveViewController:(UIViewController *)controller;
+
++(void)showToastMessage:(NSString *)msg;
++(void)showToastMessage:(NSString *)msg aboveView:(UIView *)view;
 
 @end
