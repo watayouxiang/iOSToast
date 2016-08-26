@@ -10,7 +10,6 @@
 
 @interface ttToast : UILabel
 
-+(void)showToastMessage:(NSString *)msg;
-+(void)showToastMessage:(NSString *)msg aboveView:(UIView *)view;
++(void)showToastMessage:(NSString *)message;
 
 @end
